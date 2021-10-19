@@ -7,6 +7,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.link-projects {
+  color: #4d1b8e;
+  font-weight: bold;
+  animation: animateText 20000ms linear infinite;
+
+}
+
+.link-projects:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+@keyframes animateText {
+  0% {
+    color: #4d1b8e;
+  }
+  50% {
+    color: #90d529;
+  }
+  100% {
+    color: #4d1b8e;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
