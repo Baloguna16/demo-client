@@ -14,10 +14,9 @@ import MainProtected from './components/pages/MainProtected';
 const App = () => {
   const [flashMessages, setFlashMessages] = useState([]);
   const sessionToken = Cookies.get('sessionToken');
-  const hasSession = sessionToken !== undefined;
   return (
     <div className="App">
-      <Navbar hasSession={hasSession} />
+      <Navbar />
       <Flash flashMessages={flashMessages} setFlashMessages={setFlashMessages} />
       <Switch>
         <Route exact path="/">

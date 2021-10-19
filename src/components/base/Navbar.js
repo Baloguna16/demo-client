@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Navbar = ({ hasSession }) => {
+const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (

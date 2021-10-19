@@ -12,6 +12,7 @@ const MainForm = ({ setFlashMessages }) => {
     return res.json();
   }
 
+  // Send the 'secret' as json in a POST request to the Flask side
   const submit = (e) => {
     e.preventDefault();
     fetch(process.env.REACT_APP_SERVER + '/post', {

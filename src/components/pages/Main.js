@@ -6,7 +6,6 @@ const Main = ({ setFlashMessages }) => {
 
   let statusOK;
   let statusCode;
-
   const isStatusOK = (res) => {
     statusOK = res.ok;
     statusCode = res.status;
@@ -21,6 +20,7 @@ const Main = ({ setFlashMessages }) => {
         setMessage(data.message);
         console.log({"Who sent this message?": data.messager})
 
+        // set the cookies depending on whether the app is running locally or in production remotely
         let configs;
         if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
           configs = { sameSite: 'none', secure: true}

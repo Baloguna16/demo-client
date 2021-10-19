@@ -15,7 +15,7 @@ const MainProtected = () => {
 
   useEffect(() => {
     fetch(process.env.REACT_APP_SERVER + `/get/protected`, {
-      credentials: 'include'
+      credentials: 'include' // This is really important! Include credentials or cookies won't send!
     })
     .then(isStatusOK)
     .then(data => {
