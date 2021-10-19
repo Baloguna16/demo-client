@@ -25,7 +25,7 @@ const Main = ({ setFlashMessages }) => {
         if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
           configs = { sameSite: 'none', secure: true}
         } else {
-          configs = { domain: process.env.REACT_APP_DOMAIN, sameSite: 'none', secure: true}
+          configs = { domain: process.env.REACT_APP_DOMAIN, sameSite: 'none'}
         }
         Cookies.set('sessionToken', data.session, configs);
         setFlashMessages(["The session token has been set in your browser."])
