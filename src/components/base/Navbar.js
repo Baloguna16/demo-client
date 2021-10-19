@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container-fluid">
-        <a class="navbar-brand" href="/">Demo App</a>
+        <a className="navbar-brand" href="/">Demo App</a>
         <button
           className="navbar-toggler"
           type="button"
