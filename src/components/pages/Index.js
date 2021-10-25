@@ -13,7 +13,7 @@ const Index = () => {
                 <p className="text-center mt-3 fst-italic">Check out these resources for more info:</p>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-center">
-                    <a href="https://medium.com/p/bc002dd94787/edit">Walkthrough on Medium</a>
+                    <a href="https://medium.com/geekculture/a-complete-guide-to-building-and-deploying-your-own-website-with-react-flask-and-heroku-bc002dd94787">Walkthrough on Medium</a>
                   </li>
                   <li class="list-group-item text-center">
                     <a href="https://www.github.com/Baloguna16/demo-client">Github Repo for Frontend</a>
